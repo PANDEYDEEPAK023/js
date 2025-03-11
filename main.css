@@ -1,0 +1,183 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/assets/fonts/Montserrat-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("/assets/fonts/Montserrat-Medium.ttf");
+  font-weight: medium;
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/assets/fonts/Montserrat-Regular.ttf");
+  font-weight: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-2 {
+  margin-top: 16px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media screen and (max-width: 1600px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Montserrat-Regular";
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.parent_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.parent_container .left_section .topic_checkbox {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.parent_container .left_section .topic_checkbox input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: rgb(182, 75, 224);
+  border-radius: 50%;
+}
+.parent_container .left_section .topic_checkbox:first-of-type input[type=checkbox] {
+  background-color: green;
+}
+.parent_container .left_section .topic_checkbox:last-of-type input[type=checkbox] {
+  background-color: black;
+}
+.parent_container .left_section .topic_checkbox input[type=checkbox]::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: inherit;
+  border-radius: inherit;
+}
+.parent_container .left_section .topic_checkbox input[type=checkbox]:checked::after {
+  content: "✔";
+  color: #ffffff;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+.parent_container .left_section .second_left_stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+.parent_container .center_container .dotted_line {
+  width: 2px;
+  height: 60px;
+  margin: 10px auto;
+  border-left: 5px dotted rgba(0, 0, 255, 0.7098039216);
+}
+.parent_container .center_container p {
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.parent_container .center_container .single_line {
+  width: 2px;
+  height: 180px;
+  margin: 10px auto;
+  border-left: 5px solid rgba(0, 0, 255, 0.7098039216);
+}
+.parent_container .center_container .second_center_stage {
+  display: flex;
+  flex-direction: column;
+}
+.parent_container .end_container {
+  width: 319px;
+  line-height: 22px;
+}
+.parent_container .end_container .common_font button {
+  padding: 10px;
+  width: 100%;
+  background-color: #0d51bf;
+  border-radius: 10px;
+  border: 1px solid #0d51bf;
+  color: #ffffff;
+}
+.parent_container .end_container .second_center_stage {
+  margin-top: 50px;
+  position: absolute;
+}
+.parent_container .end_container .second_center_stage_top {
+  display: flex;
+  justify-content: center;
+}
+.parent_container .end_container .second_center_stage_top button {
+  width: 19%;
+  margin-right: 5px;
+}
+.parent_container .end_container .second_center_stage .dotted_line {
+  position: absolute;
+  left: 28%;
+  width: 2px;
+  height: 20px;
+  border-left: 5px dotted rgba(0, 0, 255, 0.71);
+  top: 40px;
+}
+.parent_container .end_container .second_center_stage .dotted_line_one {
+  position: absolute;
+  left: 49%;
+  width: 2px;
+  height: 20px;
+  border-left: 5px dotted rgba(0, 0, 255, 0.71);
+  top: 40px;
+}
+.parent_container .end_container .second_center_stage .dotted_line_two {
+  position: absolute;
+  left: 70%;
+  width: 2px;
+  height: 20px;
+  border-left: 5px dotted rgba(0, 0, 255, 0.71);
+  top: 40px;
+}
+.parent_container .common_font {
+  border: 3px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.parent_container button {
+  background-color: #ffe599;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  color: #000000;
+  cursor: pointer;
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.parent_container button:hover {
+  background-color: #f3c950;
+}/*# sourceMappingURL=main.css.map */

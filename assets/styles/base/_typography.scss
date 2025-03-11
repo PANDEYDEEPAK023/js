@@ -1,0 +1,15 @@
+@use "../abstract/variables";
+
+html {
+    font-size: 62.5%;
+    @media screen and (max-width: 1600px) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: variables.$font-regular;
+    color: variables.$color-black;
+    background-color: #F2F2F2;
+}
